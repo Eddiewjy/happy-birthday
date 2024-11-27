@@ -26,6 +26,22 @@ const fetchData = () => {
 
 // Animation Timeline
 const animationTimeline = () => {
+  const skipAnimations = true; // 设置一个标志来控制是否跳过动画
+
+  if (skipAnimations) {
+    // 不执行动画
+    console.log("Animations are skipped.");
+    return;
+  }
+
+  const tl = new TimelineMax();
+
+  tl.to(".container", 0.1, {
+    visibility: "visible"
+  }).from(".one", 0.7, {
+    opacity: 0,
+    y: 10
+  });
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
@@ -52,7 +68,7 @@ const animationTimeline = () => {
     skewX: "-15deg"
   };
 
-  const tl = new TimelineMax();
+  
 
   tl
     .to(".container", 0.1, {
