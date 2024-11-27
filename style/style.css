@@ -30,7 +30,7 @@ body {
   top: 0;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   left: 0;
   right: 0;
@@ -41,7 +41,7 @@ body {
   font-size: 4.5rem;
 }
 
-.one > img {
+.one>img {
   vertical-align: middle;
   margin-bottom: 10px;
   max-width: 100%;
@@ -117,7 +117,8 @@ body {
 }
 
 avatar-container {
-  position: relative; /* 给头像容器设置相对定位 */
+  position: relative;
+  /* 给头像容器设置相对定位 */
   display: inline-block;
 }
 
@@ -128,11 +129,16 @@ avatar-container {
 }
 
 .six .hat {
-  position: absolute; /* 让帽子相对头像进行定位 */
-  top: -40px; /* 使帽子位于头像的上方 */
-  left: 50%; /* 让帽子居中于头像 */
-  transform: translateX(-50%); /* 使帽子精确地水平居中 */
-  width: 60px; /* 你可以调整帽子的宽度 */
+  position: absolute;
+  /* 让帽子相对头像进行定位 */
+  top: -60px;
+  /* 使帽子位于头像的上方 */
+  left: 60%;
+  /* 让帽子居中于头像 */
+  transform: translateX(-50%);
+  /* 使帽子精确地水平居中 */
+  width: 60px;
+  /* 你可以调整帽子的宽度 */
   height: auto;
   /* transform: scale(0.1); */
 }
@@ -304,6 +310,3 @@ avatar-container {
     font-weight: lighter;
   }
 }
-
-
-
