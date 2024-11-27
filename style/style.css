@@ -304,3 +304,9 @@ avatar-container {
     font-weight: lighter;
   }
 }
+
+* {
+    animation: none !important;
+    transition: none !important;
+}
+
