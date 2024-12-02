@@ -18,7 +18,7 @@ body {
 }
 
 .container div.six {
-  top: 10vh;
+  top: 15vh;
   z-index: 1;
 }
 
@@ -116,30 +116,17 @@ body {
   position: relative;
 }
 
-avatar-container {
-  position: relative;
-  /* 给头像容器设置相对定位 */
-  display: inline-block;
-}
-
 .six img {
   display: inline-block;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 
 .six .hat {
   position: absolute;
-  /* 让帽子相对头像进行定位 */
-  top: -60px;
-  /* 使帽子位于头像的上方 */
-  left: 60%;
-  /* 让帽子居中于头像 */
-  transform: translateX(-50%);
-  /* 使帽子精确地水平居中 */
   width: 60px;
-  /* 你可以调整帽子的宽度 */
-  height: auto;
+  top: -75px;
+  left:40% !important;
   /* transform: scale(0.1); */
 }
 
@@ -294,7 +281,8 @@ avatar-container {
 
   .six .hat {
     width: 50px;
-    top: -20px;
+    top: -60px;
+    right: 10px;
   }
 
   .wish-hbd {
